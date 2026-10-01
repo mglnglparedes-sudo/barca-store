@@ -1,0 +1,296 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;    background-color: #f5f5f5;
+    color: #222;
+    
+}
+
+
+/* Barra de navegación */
+
+.navbar {
+    background-color: #0b1f5e;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ed1b2f;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 70vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        rgba(11, 31, 94, 0.85),
+        rgba(150, 0, 45, 0.85)
+    );
+}
+
+.hero-content {
+    color: white;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    .logo,
+.hero h1 {
+    font-family: 'Oswald', sans-serif;
+}
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+/* Botón */
+
+.btn {
+    display: inline-block;
+
+    background-color: white;
+    color: #0b1f5e;
+
+    padding: 15px 30px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ed1b2f;
+    color: white;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #0b1f5e;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+/* Sección de promociones */
+
+.promociones {
+    padding: 70px 60px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.promociones h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    color: #0b1f5e;
+    margin-bottom: 15px;
+}
+
+.promociones-intro {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color:#555;
+}
+
+
+/* Contenedor de productos */
+
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;} 
+
+
+/* Tarjeta */
+
+.producto {
+    width: 200px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Imagen */
+
+.producto-imagen {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.producto-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Información del producto */
+
+.producto h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.precio-anterior {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.precio {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ed1b2f;
+    margin-bottom: 20px;
+}
+/* Formulario de suscripción */
+.suscripcion {
+    padding: 70px 60px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.suscripcion h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    color: #0b1f5e;
+    margin-bottom: 15px;
+}
+
+.suscripcion p {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.suscripcion form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.suscripcion label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.suscripcion input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.suscripcion button {
+    background-color: #0b1f5e;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.suscripcion button:hover {
+    background-color: #ed1b2f;
+}
+
+/* Diseño para celulares */
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .promociones {
+        padding: 50px 20px;
+    }
+
+    .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .suscripcion {
+        padding: 50px 20px;
+    }
+
+}
